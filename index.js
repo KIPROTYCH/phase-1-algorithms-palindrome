@@ -1,9 +1,30 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let left = 0;
+  let right = word.length -1;
+
+  while (left <= right) {
+    if (word[left] !== word[right]) {
+      return false;
+    }
+    left++;
+    right--;
+  }
+  return true;
 }
 
 /* 
   Add your pseudocode here
+  function isPalindrome(word);
+  left = 0;
+  right = (length of word)- 1
+  while left <= right:
+    if the left word is not equal to the right word:
+      return false
+    left = left + 1
+    right = right - 1
+
+  return true
 */
 
 /*
